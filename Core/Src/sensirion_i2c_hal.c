@@ -13,11 +13,11 @@
 #include "sensirion_i2c_hal.h"
 
 
-static I2C_HandleTypeDef hi2c1;
+extern I2C_HandleTypeDef hi2c1;
 
 void sensirion_i2c_hal_init(void){
 
-	  __HAL_RCC_I2C1_CLK_ENABLE();
+	/*  __HAL_RCC_I2C1_CLK_ENABLE();
 
 	  hi2c1.Instance = I2C1;
 	  hi2c1.Init.ClockSpeed = 100000;
@@ -30,7 +30,7 @@ void sensirion_i2c_hal_init(void){
 	  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
 
 	  HAL_I2C_Init(&hi2c1);
-
+*/
 }
 
 void sensirion_i2c_hal_free(void){
