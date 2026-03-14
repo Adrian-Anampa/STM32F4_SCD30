@@ -45,19 +45,18 @@ uint16_t sensirion_common_bytes_to_uint16_t(const uint8_t* bytes);
 uint32_t sensirion_common_bytes_to_uint32_t(const uint8_t* bytes);
 
 
-float sensirion_common_bytes_to_float_t(const uint8_t* bytes);
+float sensirion_common_bytes_to_float(const uint8_t* bytes);
 
 
-void sensirion_common_uint32_to_bytes_t(const uint32_t value,const uint8_t* bytes);
+void sensirion_common_uint32_to_bytes(const uint32_t value,const uint8_t* bytes);
 
-void sensirion_common_uint16_to_bytes_t(const uint16_t value,const uint8_t* bytes);
+void sensirion_common_uint16_to_bytes(const uint16_t value,const uint8_t* bytes);
 
-void sensirion_common_int32_to_bytes_t(const int32_t value,const uint8_t* bytes);
+void sensirion_common_int32_to_bytes(const int32_t value,const uint8_t* bytes);
 
-void sensirion_common_int16_to_bytes_t(const int16_t value,const uint8_t* bytes);
+void sensirion_common_int16_to_bytes(const int16_t value,const uint8_t* bytes);
 
-void sensirion_common_float_to_bytes_t(const float value,const uint8_t* bytes);
-
+void sensirion_common_float_to_bytes(const float value,const uint8_t* bytes);
 /*-- Copia los bytes de un arreglo a otro ---
 
  	 @param source Arreglo de bytes que se van a copiar

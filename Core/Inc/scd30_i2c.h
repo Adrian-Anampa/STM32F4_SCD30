@@ -61,7 +61,7 @@ int16_t scd30_get_measurement_interval(uint16_t* interval);
 int16_t scd30_get_data_ready(uint16_t* data_ready_flag);
 
 int16_t scd30_read_measurement_data(float* co2_concentration ,
-									float* temperatura , float* humidity);
+									float* temperature , float* humidity);
 /*
  * Activa o desactiva continuamente automatic self-calibration ( ASC=
  * Continuous automatic self-calibration (ASC) can be (de-)activated with this

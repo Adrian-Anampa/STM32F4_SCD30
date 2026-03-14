@@ -57,7 +57,7 @@ bytes[0] = (uint8_t)(value >> 8);
 bytes[1] = (uint8_t)value;
 }
 
-void sensirion_common_float_to_bytes(const float value, uint8_t* bytes) {
+void sensirion_common_float_to_bytes(const float value,const uint8_t* bytes) {
 union {
     uint32_t u32_value;
     float float32;

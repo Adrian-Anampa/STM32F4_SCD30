@@ -12,9 +12,6 @@
 #include <stdint.h> // Incluye los uint como tipo de datos
 #include <stdbool.h>
 
-#define bool int
-#define true 1
-#define false 0
 
 
 

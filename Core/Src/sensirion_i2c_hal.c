@@ -17,7 +17,8 @@ extern I2C_HandleTypeDef hi2c1;
 
 void sensirion_i2c_hal_init(void){
 
-	/*  __HAL_RCC_I2C1_CLK_ENABLE();
+	/*
+	 __HAL_RCC_I2C1_CLK_ENABLE();
 
 	  hi2c1.Instance = I2C1;
 	  hi2c1.Init.ClockSpeed = 100000;
@@ -30,7 +31,7 @@ void sensirion_i2c_hal_init(void){
 	  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
 
 	  HAL_I2C_Init(&hi2c1);
-*/
+	*/
 }
 
 void sensirion_i2c_hal_free(void){
@@ -39,12 +40,12 @@ void sensirion_i2c_hal_free(void){
 
 int8_t sensirion_i2c_hal_read(uint8_t address, uint8_t* data, uint8_t count){
 
-	return (int8_t)HAL_I2C_Master_Receive(&hi2c1,(uint16_t)(address<<1), data, count, 100);
+	return (int8_t)HAL_I2C_Master_Receive(&hi2c1,(uint16_t)(address<<1), data, count, HAL_MAX_DELAY);
 
 }
 int8_t sensirion_i2c_hal_write(uint8_t address , const uint8_t* data,uint8_t count){
 
-	return (int8_t)HAL_I2C_Master_Transmit(&hi2c1, (uint16_t)(address<<1), (uint8_t*)data, count, 100);
+	return (int8_t)HAL_I2C_Master_Transmit(&hi2c1, (uint16_t)(address<<1), (uint8_t*)data, count, HAL_MAX_DELAY);
 }
 
 void sensirion_i2c_hal_sleep_usec(uint32_t useconds){
