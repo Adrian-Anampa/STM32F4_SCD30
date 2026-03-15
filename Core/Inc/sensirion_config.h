@@ -12,8 +12,4 @@
 #include <stdint.h> // Incluye los uint como tipo de datos
 #include <stdbool.h>
 
-
-
-
-
 #endif /* INC_SENSIRION_CONFIG_H_ */

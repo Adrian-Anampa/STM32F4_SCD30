@@ -13,7 +13,7 @@
 
 /*-- Funcion que selecciona el bus i2c actual por indice--- */
 
-int16_t sensirion_i2c_hal_select_bus(uint8_t bus_idx);
+//int16_t sensirion_i2c_hal_select_bus(uint8_t bus_idx);
 
 /*------Funcion para iniciarlizar la comunicacion i2c ----*/
 

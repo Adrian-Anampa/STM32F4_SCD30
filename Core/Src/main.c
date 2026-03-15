@@ -109,7 +109,7 @@ int main(void)
      scd30_stop_periodic_measurement();
      scd30_soft_reset();
      sensirion_hal_sleep_us(2000000);
-     uint8_t major = 0;
+    /* uint8_t major = 0;
      uint8_t minor = 0;
      error = scd30_read_firmware_version(&major, &minor);
      if (error != NO_ERROR) {
@@ -118,7 +118,7 @@ int main(void)
      }
      printf("major: %u ", major);
      printf("minor: %u\n", minor);
-
+*/
      error = scd30_start_periodic_measurement(0);
      if (error != NO_ERROR) {
          printf("error executing start_periodic_measurement(): %i\n", error);
